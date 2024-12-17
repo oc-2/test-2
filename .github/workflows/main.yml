@@ -7,7 +7,7 @@ on:
 
 jobs:
   new-rails-app:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -21,9 +21,9 @@ jobs:
         with:
           ruby-version: '2.6'
       - name: Install Npm
-        run: sudo npm install -g npm@12.13.0
+        run: npm install -g npm@12.13.0
       - name: Install Yarn
-        run: sudo npm i -g yarn@1.22.5   
+        run: npm i -g yarn@1.22.5   
       - name: Install bundler and rails
         run: gem install rails -v 6.0.3.3
       - name: Create new rails app
