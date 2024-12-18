@@ -23,15 +23,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
 
-      - run: |
-          mkdir artifact
-          unzip artifact.zip -d artifact
+      - run: rm artifact.zip 
           
       - name: Commit & Push changes
         uses: actions-js/push@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          author_email: '185859974+oc-2@users.noreply.github.com'
-          author_name: 'oc-2'
-          message: 'config new rails app'
-          branch: 'main'
+          author_email: 185859974+oc-2@users.noreply.github.com
+          author_name: oc-2
+          message: config new rails app
+          branch: main
