@@ -43,11 +43,5 @@ jobs:
       - name: Create new Rails app
         run: rails new test-jekyll
         
-      - name: Commit & Push changes
-        uses: actions-js/push@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          author_email: '185859974+oc-2@users.noreply.github.com'
-          author_name: 'oc-2'
-          message: 'config new rails app'
-          branch: 'main'
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4
