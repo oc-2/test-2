@@ -26,7 +26,7 @@ jobs:
           ruby-version: '2.6'
       - name: Install Yarn
         run: npm i -g yarn@1.22.5   
-      - run: gem install zeitwerk -v 2.6.18 && gem install rails -v 6.0.3.3
+      - run: gem install rails -v 6.0.3.3 --force
       - name: Create new rails app
         run: rails new test-jekyll
       - name: Commit and Push
