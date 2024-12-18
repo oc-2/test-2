@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "oc-2"
           git config user.email "185859974+oc-2@users.noreply.github.com" 
-          git add .
+          git add test-jekyll/
           git commit -m "Adding Rails App" --allow-empty
           git push origin HEAD:main
