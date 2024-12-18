@@ -44,7 +44,7 @@ jobs:
         run: |
           rails new test-jekyll
           cd test-jekyll
-          rmdir node_modules
+          rm -rf node_modules
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
