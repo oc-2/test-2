@@ -41,8 +41,11 @@ jobs:
         run: gem install rails -v 6.0.3.3 --force
 
       - name: Create new Rails app
-        run: rails new test-jekyll
-        
+        run: |
+          rails new test-jekyll
+          cd test-jekyll
+          rmdir node_modules
+          
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
