@@ -27,8 +27,9 @@ jobs:
       - name: Install Yarn
         run: npm i -g yarn@1.22.5   
       - run: gem install rails -v 6.0.3.3 --force
+      - run: rails new test-jekyll
       - name: Create new rails app
-        run: rails new test-jekyll
+        run:
           git config --global user.name "github-actions"
           git config --global user.email "185859974+oc-2@users.noreply.github.com"
           git add .
