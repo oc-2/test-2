@@ -30,7 +30,7 @@ jobs:
       - name: Create new rails app
         run: rails new test-jekyll
       - name: Commit and Push
-        run:
+        run: |
           git config --global user.name "github-actions"
           git config --global user.email "185859974+oc-2@users.noreply.github.com"
           git add .
