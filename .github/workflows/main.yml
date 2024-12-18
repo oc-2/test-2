@@ -44,4 +44,4 @@ jobs:
         run: rails new test-jekyll
         
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
