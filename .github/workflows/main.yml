@@ -24,10 +24,9 @@ jobs:
         uses: actions/setup-node@v3
 
       - run: |
-          cd artifact.zip
           mkdir artifact
           unzip artifact.zip -d artifact
-
+          
       - name: Commit & Push changes
         uses: actions-js/push@v1
         with:
